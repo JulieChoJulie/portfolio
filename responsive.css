@@ -1,12 +1,6 @@
-@media screen and (max-width: 575px) {
-  article .jumbotron .typing {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 610px) {
-  header {
-    font-size: 1em;
+@media screen and (max-width: 320px) {
+  article .jumbotron .typing{
+    font-size: 0.1em;
   }
 
   header .list-navbar {
@@ -17,55 +11,90 @@
     display: inline-block;
   }
 
+  article .shell-top .center {
+    width: 60%
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 420px) {
+  article .jumbotron .typing {
+    font-size: 0.5em;
+  }
+
+  header .list-navbar {
+    display: none;
+  }
+
+  header .hamburger-icon {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 610px) {
+  article .jumbotron .typing {
+    font-size: 0.6em;
+  }
+  header .list-navbar {
+    display: none;
+  }
+  header .hamburger-icon {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 611px) and (max-width: 880px) {
+  article .jumbotron .typing {
+    font-size: 1em;
+  }
+  header {
+    font-size: 1em;
+  }
+  header .hamburger-icon {
+    display: none;
+  }
+  header .list-navbar {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 611px) and (max-width: 690px) {
   article .jumbotron .typing {
     font-size: 0.9em;
   }
+  header .hamburger-icon {
+    display: none;
+  }
+  header .list-navbar {
+    display: inline-block;
+  }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 880px) and (max-width: 1014px) {
+
+  article .jumbotron .typing {
+    font-size: 1.1 em;
+  }
   header {
-    font-size: 1em;
+    font-size: 1.2em;
   }
-
-  header .list-navbar {
+  header .hamburger-icon {
     display: none;
   }
-
-  header .hamburger-icon {
+  header .list-navbar {
     display: inline-block;
-  }
-
-  article .jumbotron .typing {
-    font-size: 0.1em;
   }
 }
 
-@media screen and (min-width: 611px) and (max-width: 960px) {
+@media screen and (min-width: 1014px) {
+  html, body {
+    font-size: 1.18em;
+  }
   header {
-    font-size: 1em;
+    font-size: 1.2em;
   }
-
-  header .hamburger-icon {
-    display: none;
-  }
-
-  header .list-navbar {
-    display: inline-block;
-  }
-
-  article .jumbotron .typing {
-    font-size: 1em;
-  }
-}
-
-@media screen and (min-width: 960px) {
   header .hamburger-icon {
     display: none;
   }
   header .list-navbar {
     display: inline-block;
-  }
-  article .jumbotron .typing {
-    font-size: 1.5em;
   }
 }
