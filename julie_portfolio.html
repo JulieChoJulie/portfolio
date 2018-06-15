@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Julie's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+  <script src="typed.js"></script>
+  <script src="typed.min.js"></script>
+  <script src="typing_introduction.js"></script>
+  <link rel="stylesheet" href="trial.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar site fixed-top list-navbar">
+      <ul class="bracket">
+        <li><a href="#">  Home  </a></li>
+        <li><a href="#">  About  </a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#"> Contact </a></li>
+      </ul>
+    </nav>
+
+    <nav class="navbar fixed-top hamburger-icon">
+      <div id="brand-name">
+      <a class="navbar-brand" href="#">Julie Cho</a>
+      </div>
+      <button class="navbar-toggler header__menu" type="button" data-toggle="collapse" data-target="#collapsableNavbar">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="collapsableNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="collapse">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="collapse">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <article>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="shell-top">
+          <div class="icon" style="font-size:0.5em; color:red;">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <div class="icon" style="font-size:0.5em; color:orange;">
+            <i class="fas fa-minus-circle"></i>
+          </div>
+          <div class="icon" style="font-size:0.5em;">
+            <span class="fa-layers fa-fw">
+              <i class="fas fa-circle" style="color:green;"></i>
+              <i class="fas fa-arrows-alt-h" style="color:white; font-size:0.5em" data-fa-transform="rotate-135"></i>
+            </span>
+          </div>
+          <div class="center icon">
+            <div style="font-size:0.5em; text-align:center">
+              <i class="fas fa-home" style="color:#b38600"></i>
+              <span style="color:#555656">Julie -- -bash -- 70*13</span>
+            </div>
+          </div>
+        </div>
+        <div class="typing">
+        <div><span>julie ~ $ </span><span class="intro"></span></div>
+        <div class="second-sentence"><span>julie ~ $ </span><span class="intro-second"></span></div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+<script>
+
+    var typed = new Typed(".intro", {
+        strings: [
+            "", "Let me introduce myself."
+        ],
+        typeSpeed: 50,
+        backSpeed: 25,
+        cursorChar: '█',
+        contentType: 'text',
+        onComplete: function() {
+            return setTimeout(function(){
+                return $('.intro').siblings('.typed-cursor').hide();
+            }, 400);
+
+        }
+    });
+
+    function removeCursor () {
+        return $('.typed-cursor').hide();
+    }
+
+    $(document).ready(
+        setTimeout(function(){
+
+
+            $('.second-sentence').show();
+            writeNextSentence();
+        }, 3000)
+    );
+
+  function writeNextSentence(){
+      var typedNext = new Typed(".intro-second", {
+          strings: ["", "I am Julie Cho . . ", "I am a Full Stack Web Developer!"],
+          smartBackspace: true,
+          typeSpeed: 50,
+          backSpeed: 25,
+          showCursor: true,
+          cursorChar: '█',
+      });
+  }
+
+
+
+</script>
+
+</body>
+</html>
