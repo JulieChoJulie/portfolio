@@ -9,9 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-
   <script src="typed.js"></script>
   <script src="typed.min.js"></script>
   <script src="typing_introduction.js"></script>
@@ -60,76 +57,120 @@
 
   <article>
     <div class="container">
-      <div class="jumbotron">
-        <div class="shell-top">
-          <div class="icon" style="font-size:0.5em; color:red;">
-            <i class="fas fa-times-circle"></i>
-          </div>
-          <div class="icon" style="font-size:0.5em; color:orange;">
-            <i class="fas fa-minus-circle"></i>
-          </div>
-          <div class="icon" style="font-size:0.5em;">
-            <span class="fa-layers fa-fw">
-              <i class="fas fa-circle" style="color:green;"></i>
-              <i class="fas fa-arrows-alt-h" style="color:white; font-size:0.5em" data-fa-transform="rotate-135"></i>
-            </span>
-          </div>
-          <div class="center icon">
-            <div style="font-size:0.5em; text-align:center">
-              <i class="fas fa-home" style="color:#b38600"></i>
-              <span style="color:#555656">Julie -- -bash -- 70*13</span>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
+          <section class="clicking-terminal animated">
+            <div class="tv-icon" style="font-size:20em; color:black;">
+              <i class="fas fa-tv"></i>
+            </div>
+
+          </section>
+
+          <div class="jumbotron">
+
+            <div class="shell-top">
+              <div class="icon" style="font-size:0.5em; color:red;">
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="icon" style="font-size:0.5em; color:orange;">
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div class="icon" style="font-size:0.5em;">
+                <span class="fa-layers fa-fw">
+                  <i class="fas fa-circle" style="color:green;"></i>
+                  <i class="fas fa-arrows-alt-h" style="color:white; font-size:0.5em" data-fa-transform="rotate-135"></i>
+                </span>
+              </div>
+              <div class="center icon">
+                <div style="font-size:0.5em; text-align:center">
+                  <i class="fas fa-home" style="color:#b38600"></i>
+                  <span style="color:#555656">Julie -- -bash -- 70*13</span>
+                </div>
+              </div>
+            </div>
+            <div class="typing">
+            <div><span>julie ~ $ </span><span class="intro"></span></div>
+            <div class="second-sentence"><span>julie ~ $ </span><span class="intro-second"></span></div>
             </div>
           </div>
-        </div>
-        <div class="typing">
-        <div><span>julie ~ $ </span><span class="intro"></span></div>
-        <div class="second-sentence"><span>julie ~ $ </span><span class="intro-second"></span></div>
         </div>
       </div>
     </div>
   </article>
 
+  <!--<article id="about">-->
+    <!--<div class="container">-->
+      <!--<div class="row">-->
+        <!--<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">-->
+          <!--<img src="profile-photo.png" alt="profile-photo">-->
+        <!--</div>-->
+        <!--<div class="col-lg-6 col-md-6 col-sm-7 col-xs-6">-->
+          <!--<-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</article>-->
+
 <script>
-
-    var typed = new Typed(".intro", {
-        strings: [
-            "", "Let me introduce myself."
-        ],
-        typeSpeed: 50,
-        backSpeed: 25,
-        cursorChar: '█',
-        contentType: 'text',
-        onComplete: function() {
-            return setTimeout(function(){
-                return $('.intro').siblings('.typed-cursor').hide();
-            }, 400);
-
-        }
-    });
-
-    function removeCursor () {
-        return $('.typed-cursor').hide();
-    }
-
-    $(document).ready(
-        setTimeout(function(){
-
-
-            $('.second-sentence').show();
-            writeNextSentence();
-        }, 3000)
-    );
-
-  function writeNextSentence(){
-      var typedNext = new Typed(".intro-second", {
-          strings: ["", "I am Julie Cho . . ", "I am a Full Stack Web Developer!"],
-          smartBackspace: true,
-          typeSpeed: 50,
-          backSpeed: 25,
-          showCursor: true,
-          cursorChar: '█',
-      });
-  }
+  // $(document).ready(function () {
+  //
+  //     setTimeout(addAnimation, 500);
+  //     setTimeout(addAnimationForTerminal, 1500);
+  //     setTimeout(function (){
+  //         var typed = new Typed(".intro", {
+  //             strings: [
+  //                 "", "Hello, World!"
+  //             ],
+  //             typeSpeed: 50,
+  //             backSpeed: 25,
+  //             cursorChar: '█',
+  //             contentType: 'text',
+  //             onComplete: function() {
+  //                 return setTimeout(function(){
+  //                     return $('.intro').siblings('.typed-cursor').hide();
+  //                 }, 400);
+  //             }
+  //         });
+  //
+  //     }, 2300);
+  //
+  //     setTimeout(function(){
+  //         $('.second-sentence').show();
+  //         writeNextSentence();
+  //     }, 5300);
+  //
+  // });
+  //
+  // function addAnimation () {
+  //     $('.clicking-terminal').addClass('wobble');
+  // }
+  // function removeClass (input) {
+  //     $('.clicking-terminal').removeClass(input);
+  // }
+  // function addAnimationForTerminal () {
+  //     $('.clicking-terminal').addClass('flipOutY');
+  //     setTimeout(function () {
+  //         $('.clicking-terminal').hide();
+  //         $('.jumbotron').show();
+  //         $('.jumbotron').addClass('animated flipInY');
+  //     }, 800)
+  //
+  // }
+  //
+  //
+  //
+  // function writeNextSentence(){
+  //     var typedNext = new Typed(".intro-second", {
+  //         strings: ["", "I am Julie Cho . . ", "I am a Full Stack Web Developer!"],
+  //         smartBackspace: true,
+  //         typeSpeed: 50,
+  //         backSpeed: 25,
+  //         showCursor: true,
+  //         cursorChar: '█',
+  //     });
+  // }
 
 
 

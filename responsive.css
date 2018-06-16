@@ -82,6 +82,14 @@
   header .list-navbar {
     display: inline-block;
   }
+
+  body, article, .tv-icon{
+    height: 100%;
+  }
+
+  .tv-icon svg {
+    height: 60%;
+  }
 }
 
 @media screen and (min-width: 1014px) {
@@ -97,4 +105,14 @@
   header .list-navbar {
     display: inline-block;
   }
+  body, article, .tv-icon{
+    height: 100%;
+  }
+
+  .tv-icon svg {
+    height: 60%;
+    vertical-align: top;
+    margin-top: 15vh;
+  }
+
 }

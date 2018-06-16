@@ -109,20 +109,43 @@ header button{
   padding-top: 50px;
 }
 
+article {
+  height: 90vh;
+  text-align: center;
+  width: 100%;
+}
 .container {
+  height: 100%;
   margin : 0 auto;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1300px; /*to ignore the default setting of max-width for container*/
 }
-.jumbotron {
-  margin-top : 70px;
+
+.clicking-terminal {
+  height: 100%;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+
+.clicking-terminal .tv-icon svg {
   margin-right: auto;
   margin-left: auto;
-  height: 85vh;
+  padding: 0 0 0 0;
+  width: 70%;
+}
+
+
+.jumbotron {
+  margin-top : 15vh;
+  margin-right: auto;
+  margin-left: auto;
+  height: 70vh;
   background-color: black;
   border-radius: 5px;
   padding: 0 0 0 0;
   width: 100%;
+  display: none;
 }
 
 .jumbotron .shell-top {
@@ -146,12 +169,12 @@ article .shell-top .center {
   float: none;
   margin: 0 auto;
   width: 80%;
-  tex-align: center;
+  text-align: center;
 }
 
 article .typing {
   font-family: 'Roboto Mono', monospace;
-  float:left;
+  text-align: left;
   width: 100%;
 }
 
@@ -161,4 +184,13 @@ article .typing {
 
 .second-sentence {
   display: none;
+}
+
+.row {
+  height: 100%
+}
+
+svg {
+  max-height: 100%;
+
 }
