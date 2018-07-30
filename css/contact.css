@@ -20,7 +20,12 @@ article section .icon {
 }
 
 
-/*--------------------------------------*/
+/*
+Fallout Terminal Inspired Style
+A PEN BY Mack Richardson
+https://codepen.io/mackorichardson/pen/vNMRpK
+*/
+
 label {
   clear: left;
   display: block;
@@ -62,7 +67,6 @@ a.button {
   border: 1px solid #00dd00;
   clear: both;
   color: #00dd00;
-  cursor: hand;
   display: inline-block;
   font-family: 'VT323', Courier;
   font-size: 1em;

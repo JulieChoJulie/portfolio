@@ -8,90 +8,82 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-  <script src="typed.js"></script>
-  <script src="typed.min.js"></script>
-  <script src="typing_introduction.js"></script>
-  <link rel="stylesheet" href="trial.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="stylesheet" href="animate.css">
+  <script src="js/typed.js"></script>
+  <script src="js/typingIntro.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="css/trial.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-<header>
-  <nav class="navbar site fixed-top list-navbar">
-    <ul class="bracket">
-      <li><a href="home.html">  Home  </a></li>
-      <li><a href="about.html">  About  </a></li>
-      <li><a href="projects.html">Portfolio</a></li>
-      <li><a href="contact.html"> Contact </a></li>
-    </ul>
-  </nav>
-
-  <nav class="navbar fixed-top hamburger-icon">
-    <div id="brand-name">
-      <a class="navbar-brand" href="#">Julie Cho</a>
-    </div>
-    <button class="navbar-toggler header__menu" type="button" data-toggle="collapse" data-target="#collapsableNavbar">
-      <span class="toggle-line"></span>
-      <span class="toggle-line"></span>
-      <span class="toggle-line"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="collapsableNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
+  <header>
+    <nav class="navbar site fixed-top list-navbar">
+      <ul class="bracket">
+        <li><a href="home.html">  Home  </a></li>
+        <li><a href="about.html">  About  </a></li>
+        <li><a href="projects.html">Portfolio</a></li>
+        <li><a href="contact.html"> Contact </a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
 
-</header>
+    <nav class="navbar fixed-top hamburger-icon">
+      <div id="brand-name">
+        <a class="navbar-brand" href="#">Julie Cho</a>
+      </div>
+      <button class="navbar-toggler header__menu" type="button" data-toggle="collapse" data-target="#collapsableNavbar">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="collapsableNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <article>
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-
           <section class="clicking-terminal animated">
             <div class="tv-icon" style="font-size:20em; color:black;">
               <i class="fas fa-tv"></i>
             </div>
-
           </section>
 
           <div class="jumbotron">
-
             <div class="shell-top">
               <div class="icon" style="font-size:0.5em; color:red;">
                 <i class="fas fa-times-circle"></i>
               </div>
+
               <div class="icon" style="font-size:0.5em; color:orange;">
                 <i class="fas fa-minus-circle"></i>
               </div>
+
               <div class="icon" style="font-size:0.5em;">
                 <span class="fa-layers fa-fw">
                   <i class="fas fa-circle" style="color:green;"></i>
                   <i class="fas fa-arrows-alt-h" style="color:white; font-size:0.5em" data-fa-transform="rotate-135"></i>
                 </span>
               </div>
+
               <div class="center icon">
                 <div style="font-size:0.5em; text-align:center">
                   <i class="fas fa-home" style="color:#b38600"></i>
@@ -99,88 +91,16 @@
                 </div>
               </div>
             </div>
+
             <div class="typing">
             <div><span>julie ~ $ </span><span class="intro"></span></div>
             <div class="second-sentence"><span>julie ~ $ </span><span class="intro-second"></span></div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </article>
-
-
-
-<script>
-    $(document).ready(function(){
-        $('.animated-icon3').click(function(){
-            $(this).toggleClass('open');
-        });
-    });
-
-  $(document).ready(function () {
-
-      setTimeout(addAnimation, 500);
-      setTimeout(addAnimationForTerminal, 1500);
-      setTimeout(function (){
-          var typed = new Typed(".intro", {
-              strings: [
-                  "", "Hello, World!"
-              ],
-              typeSpeed: 50,
-              backSpeed: 25,
-              cursorChar: '█',
-              contentType: 'text',
-              onComplete: function() {
-                  return setTimeout(function(){
-                      return $('.intro').siblings('.typed-cursor').hide();
-                  }, 400);
-              }
-          });
-
-      }, 2300);
-
-      setTimeout(function(){
-          $('.second-sentence').show();
-          writeNextSentence();
-      }, 5300);
-
-  });
-
-  function addAnimation () {
-      $('.clicking-terminal').addClass('wobble');
-  }
-  function removeClass (input) {
-      $('.clicking-terminal').removeClass(input);
-  }
-  function addAnimationForTerminal () {
-      $('.clicking-terminal').addClass('flipOutY');
-      setTimeout(function () {
-          $('.clicking-terminal').hide();
-          $('.jumbotron').show();
-          $('.jumbotron').addClass('animated flipInY');
-      }, 800)
-
-  }
-
-
-
-  function writeNextSentence(){
-      var typedNext = new Typed(".intro-second", {
-          strings: ["", "I am Julie Cho . . ", "I am a Full Stack Web Developer!"],
-          smartBackspace: true,
-          typeSpeed: 50,
-          backSpeed: 25,
-          showCursor: true,
-          cursorChar: '█',
-      });
-  }
-
-
-
-</script>
-
-
-
 </body>
 </html>
