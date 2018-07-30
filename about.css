@@ -1,12 +1,47 @@
-article .container .profile-photo img {
-  height: 6em;
-  width: 5em;
-}
-
-article .container .profile-photo {
-  text-align: center;
+article .container img {
+  height: 10em;
+  width: 8em;
+  float: left;
+  margin-right: 2em;
 }
 
 article .container{
-  margin-top: 4em;
+  color: black;
+  text-align: left;
+  padding: 0 2em;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8em;
+}
+
+
+@media screen and (max-width: 685px) {
+  article .container {
+    margin-top: 4em;
+  }
+
+  article .container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    float: none;
+  }
+
+  article .description {
+    padding-top: 1em;
+  }
+}
+
+
+@media screen and (min-width: 686px) and (max-width: 770px) {
+  article .container {
+    margin-top: 4em;
+  }
+}
+
+@media screen and (min-width: 771px) {
+  .vertical-center {
+    display: flex;
+    align-items: center;
+  }
 }

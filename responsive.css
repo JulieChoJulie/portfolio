@@ -52,21 +52,8 @@
   }
 }
 
+
 @media screen and (min-width: 611px) and (max-width: 880px) {
-  article .jumbotron .typing {
-    font-size: 1em;
-  }
-  header {
-    font-size: 1em;
-  }
-  header .hamburger-icon {
-    display: none;
-  }
-  header .list-navbar {
-    display: inline-block;
-  }
-}
-@media screen and (min-width: 611px) and (max-width: 690px) {
   article .jumbotron .typing {
     font-size: 0.9em;
   }
