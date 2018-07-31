@@ -19,11 +19,13 @@ article section .icon {
   display: inline-block;
 }
 
-
 /*
+code source:
 Fallout Terminal Inspired Style
 A PEN BY Mack Richardson
 https://codepen.io/mackorichardson/pen/vNMRpK
+
+codes starting below
 */
 
 label {
@@ -84,4 +86,14 @@ a.button:hover {
   background: #00dd00;
   color: #383838;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 570px) {
+  input[type=submit],
+  a.button {
+    margin-right: 1em;
+    width: 5em;
+    padding: 10px 1em;
+    float: right;
+  }
 }
